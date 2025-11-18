@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기후환경 비영리재단</title>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; color: #333; }
+        header { background: #1d6f42; padding: 20px; color: white; text-align: center; }
+        nav { background: #14512e; display: flex; justify-content: center; }
+        nav a {
+            color: white; padding: 14px 20px; text-decoration: none; display: block;
+        }
+        nav a:hover { background: #0f3c22; }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1500&q=80') no-repeat center/cover;
+            height: 60vh;
+            display: flex; flex-direction: column;
+            justify-content: center; align-items: center;
+            color: white; text-shadow: 0 0 8px rgba(0,0,0,0.5);
+        }
+        .hero h1 { font-size: 48px; margin: 0; }
+        .hero p { font-size: 20px; }
+
+        .btn {
+            margin-top: 20px; padding: 12px 25px;
+            border: none; background: #ffcc00; color: #333;
+            font-size: 18px; border-radius: 6px; cursor: pointer;
+        }
+        .btn:hover { background: #e6b800; }
+
+        section { padding: 60px 20px; max-width: 900px; margin: auto; }
+        h2 { color: #1d6f42; margin-bottom: 20px; }
+
+        .projects, .news { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .card {
+            padding: 20px; background: #f5f5f5;
+            border-radius: 10px; box-shadow: 0 0 8px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background: #14512e; color: white;
+            text-align: center; padding: 30px 10px; margin-top: 50px;
+        }
+
+        @media(max-width: 768px) {
+            .projects, .news { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 32px; }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>기후환경 비영리재단</h1>
+        <p>지구를 위한 행동, 지금 시작합니다.</p>
+    </header>
+
+    <nav>
+        <a href="#about">재단 소개</a>
+        <a href="#projects">프로젝트</a>
+        <a href="#donate">후원하기</a>
+        <a href="#news">소식</a>
+        <a href="#contact">문의</a>
+    </nav>
+
+    <div class="hero">
+        <h1>기후위기 대응, 모두의 힘으로</h1>
+        <p>우리는 지속가능한 지구를 위해 행동합니다.</p>
+        <button class="btn">지금 후원하기</button>
+    </div>
+
+    <section id="about">
+        <h2>재단 소개</h2>
+        <p>
+            기후환경 비영리재단은 지구 환경을 보전하고 지속 가능한 미래를 만들기 위해
+            연구, 교육, 시민참여 프로젝트를 수행하는 공익단체입니다.
+            우리는 투명성과 실천을 중심으로 지역사회와 함께 긍정적 변화를 만들어갑니다.
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>주요 프로젝트</h2>
+        <div class="projects">
+            <div class="card">
+                <h3>도시 숲 만들기</h3>
+                <p>도시 열섬현상을 줄이기 위한 지역 숲 조성 프로젝트.</p>
+            </div>
+            <div class="card">
+                <h3>플라스틱 제로 캠페인</h3>
+                <p>일회용품 사용을 줄이기 위한 시민참여 캠페인.</p>
+            </div>
+            <div class="card">
+                <h3>청소년 기후학교</h3>
+                <p>기후교육을 위한 청소년 리더십 프로그램 운영.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="donate">
+        <h2>후원하기</h2>
+        <p>
+            여러분의 소중한 후원은 기후 위기 대응과 환경 보호 활동에 직접적으로 사용됩니다.
+            투명한 집행과 정기 보고로 신뢰를 지키겠습니다.
+        </p>
+        <button class="btn">후원 페이지로 이동</button>
+    </section>
+
+    <section id="news">
+        <h2>새 소식</h2>
+        <div class="news">
+            <div class="card">
+                <h3>2025 기후 컨퍼런스 참여</h3>
+                <p>국제 파트너 기관과 공동 발표 진행</p>
+            </div>
+            <div class="card">
+                <h3>환경 교육 프로그램 확대</h3>
+                <p>올해 1,200명의 학생이 참여</p>
+            </div>
+            <div class="card">
+                <h3>탄소배출 감소 보고서 발간</h3>
+                <p>전국 50개 지역 데이터 분석</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>문의하기</h2>
+        <p>이메일: contact@greenfoundation.org</p>
+        <p>전화번호: 02-123-4567</p>
+    </section>
+
+    <footer>
+        © 2025 기후환경 비영리재단 | 모두의 지구를 위해
+    </footer>
+</body>
+</html>
